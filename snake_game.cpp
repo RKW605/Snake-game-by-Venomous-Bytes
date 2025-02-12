@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <conio.h>
 #include <algorithm>
+#include <time.h>
 
 using namespace std;
 
