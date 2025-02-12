@@ -114,6 +114,7 @@ int main(void)
         gameBoard Board(30, 20);  
         Food food(Board.width, Board.height);
         Snake snake(Board.width, Board.height);
+        food.generateFood(snake);
         hideCursor();
         if (c == 'a')
         {
