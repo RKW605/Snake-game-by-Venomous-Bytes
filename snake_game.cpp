@@ -51,8 +51,6 @@ class Food
         {
             this -> width = width;
             this -> height = height;
-            FoodX = rand() % width;
-            FoodY = rand() % height;
         }
         void generateFood(Snake & snake);
 };
@@ -68,6 +66,7 @@ class Snake
             headX = width / 2;
             headY = height / 2;
             Body.push_back(make_pair(headX - 1, headY));
+            Body.push_back(make_pair(headX - 2, headY));
         }
 };
 
